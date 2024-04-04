@@ -70,14 +70,25 @@
 
         <section class="cool-space-rocket">
           <h3>Cool Space Rocket</h3>
-
-          <img src="images/rocket1280.jpg" alt="Two SpaceX rockets lands to the Earth">
+            <img 
+              src="images/rocket1280.jpg" 
+              srcset="images/rocket320.jpg 320w,
+                      images/rocket640.jpg 640w,
+                      images/rocket1024.jpg 1024w,
+                      images/rocket1280.jpg 1280w"
+              sizes="(max-width: 530px) 80vw,
+                    (max-width: 730px) 70vw,
+                    (max-width: 1500px) 50vw,
+                    1000px"
+              alt="Two SpaceX rockets lands to the Earth">
         </section>
 
         <section class="space-building">
           <h3>Space Building in Bulgaria</h3>
-
-          <img src="images/space-building.jpg" alt="Communist UFO spaceship monument in the middle of nowhere in Bulgaria.">
+          <picture>
+            <source srcset="images/space-building.webp" type="image/webp">
+            <img src="images/space-building.jpg" alt="Communist UFO spaceship monument in the middle of nowhere in Bulgaria.">
+          </picture>
         </section>
 
       </article>
