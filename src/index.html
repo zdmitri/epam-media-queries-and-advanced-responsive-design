@@ -97,8 +97,11 @@
 
         <section class="nasa-astronaut">
           <h3>NASA Astronaut</h3>
-
-          <img src="images/astronaut.jpg" alt="NASA Astronaut flying in Space in front of Earth">
+          <picture>
+            <source srcset="images/astronaut-crop2.jpg" media="(max-width: 900px)">
+            <source srcset="images/astronaut-crop1.jpg" media="(max-width: 1400px)">
+            <img src="images/astronaut.jpg" alt="NASA Astronaut flying in Space in front of Earth">
+          </picture>
         </section>
       </aside>
     </main>
